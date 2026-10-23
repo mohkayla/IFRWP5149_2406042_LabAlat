@@ -1,0 +1,61 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="SIA-KRS-UseCase-v02" name="Use Case SIA - KRS">
+    <mxGraphModel dx="1262" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1460" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000, #75b98f);fillColor=#FFFFFF;strokeWidth=2;fontStyle=1;fontSize=18;verticalAlign=top;spacingTop=14;spacingLeft=14;" value="Sistem Informasi Akademik — Pengajuan dan Persetujuan KRS" vertex="1">
+          <mxGeometry height="700" width="900" x="250" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="assocMahasiswaUC03" edge="1" parent="1" source="mahasiswa" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1.5;" target="uc03" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="370" as="sourcePoint" />
+            <mxPoint x="390" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assocMahasiswaUC05" edge="1" parent="1" source="mahasiswa" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1.5;" target="uc05" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="390" as="sourcePoint" />
+            <mxPoint x="390" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assocDosenUC06" edge="1" parent="1" source="dosen" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1.5;" target="uc06" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="520" as="sourcePoint" />
+            <mxPoint x="1070" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="include0304" edge="1" parent="1" source="uc03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#166534;strokeWidth=2;endArrow=open;endFill=0;fontStyle=1;fontSize=13;labelBackgroundColor=#FFFFFF;" target="uc04" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="205" as="sourcePoint" />
+            <mxPoint x="770" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend0503" edge="1" parent="1" source="uc05" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#166534;strokeWidth=2;endArrow=open;endFill=0;fontStyle=1;fontSize=13;labelBackgroundColor=#FFFFFF;" target="uc03" value="«extend»&amp;nbsp;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="395" as="sourcePoint" />
+            <mxPoint x="540" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mahasiswa" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=15;fontColor=#111827;strokeColor=#374151;fillColor=#FFFFFF;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="145" width="100" x="70" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="dosen" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=15;fontColor=#111827;strokeColor=#374151;fillColor=#FFFFFF;" value="Dosen wali" vertex="1">
+          <mxGeometry height="145" width="100" x="1190" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="uc03" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontSize=15;spacing=8;" value="&lt;div&gt;&lt;b&gt;SIA-UC03&lt;/b&gt;&lt;br&gt;Ajukan KRS&lt;hr&gt;&lt;span style=&quot;font-size:11px&quot;&gt;extension points:&lt;br&gt;Konfirmasi penyimpanan tersedia&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="300" x="390" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uc04" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontSize=15;spacing=8;" value="&lt;b&gt;SIA-UC04&lt;/b&gt;&lt;br&gt;Validasi KRS" vertex="1">
+          <mxGeometry height="90" width="300" x="770" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uc05" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontSize=15;spacing=8;" value="&lt;b&gt;SIA-UC05&lt;/b&gt;&lt;br&gt;Unduh bukti pengajuan KRS" vertex="1">
+          <mxGeometry height="90" width="300" x="390" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="uc06" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontSize=15;spacing=8;" value="&lt;b&gt;SIA-UC06&lt;/b&gt;&lt;br&gt;Proses keputusan KRS" vertex="1">
+          <mxGeometry height="90" width="300" x="770" y="465" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
